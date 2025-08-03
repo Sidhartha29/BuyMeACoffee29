@@ -1,0 +1,221 @@
+<html >
+<head>
+  <title>Creator Social Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+  }
+  
+  .banner {
+    background-color: #f9e8cc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .banner button {
+    margin-left: 10px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .nav-buttons button {
+    background: #708bfa;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  .cover {
+    height: 100px;
+    background-color: #eef0ff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+  }
+  
+  .cover-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .about, .follow-box {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  
+  .about h3 {
+    margin-top: 0;
+  }
+  
+  .edit {
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+  
+  .follow-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .follow-btn {
+    width: 100%;
+    background-color: #7d95fc;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .highlight {
+    color: #7d95fc;
+  }
+  
+  .music-feed {
+    padding: 30px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 14px;
+    background: #f9f9f9;
+  }
+  
+  footer a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+<body>
+  <!-- Top Banner -->
+  <div class="banner">Please link your socials to start sharing content. <button>Complete setup</button></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="profile">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zTaf7DiAioPFY_SwVjnz47M7OEpaGonIuw&s" alt="Avatar" class="avatar" />
+      <span class="username">Sidhartha Kalva</span>
+    </div>
+    <nav class="nav-buttons">
+      <button>+ Create</button>
+      <img src="menu-icon.png" class="menu-icon" />
+    </nav>
+  </header>
+
+  <!-- Cover Image Section -->
+  <section class="cover">
+    <button class="cover-btn">Add cover image</button>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="about">
+      <h3>About Sidhartha Kalva <span class="edit">Edit</span></h3>
+      <p>My passion lies in reviewing mobile accessories.</p>
+      <img src="data:image/jpeg;base64,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" alt="About Image" style="width:100%; border-radius: 10px; margin-top:10px;" />
+      <p><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="icon" alt="Instagram" /></p>
+      <hr>
+      <h4>Recent Posts</h4>
+      <div class="post">Be the first one to support Sidhartha Kalva by following and sharing music.</div>
+    </section>
+
+    <section class="follow-box">
+      <h3>Follow <span class="highlight">Sidhartha Kalva</span></h3>
+      <input type="text" placeholder="Name or @yoursocial (optional)" />
+      <input type="email" placeholder="Enter your email" />
+      <button class="follow-btn">Follow</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>English</span>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Report</a>
+  </footer>
+</body>
+</html>

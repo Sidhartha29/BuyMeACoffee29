@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>Creator Social Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    .banner {
+      background-color:  #FFDD00;
+      color: #000;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .banner img {
+      height: 30px;
+    }
+    .post {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .post h3 {
+      margin-top: 0;
+    }
+    .post p {
+      margin-bottom: 10px;
+    }
+    .music-post img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="data:image/jpeg;base64,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" alt="Buy Me a Coffee Logo">
+    <span>Buy Me a Coffee</span>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+  <a href="dashboard.html"><button>🏠 Home</button></a>
+  <a href="profilepage.html"><button>👤 Profile</button></a>
+  <a href="post.html"><button>📝 Create Post</button></a>
+  <hr>
+  <button>🔍 View Page</button>
+  <button>🌟 Explore Creators</button>
+  <hr>
+  <button>❤️ Supporters</button>
+  <button>🔒 Memberships</button>
+  <button>🛍️ Shop</button>
+  <button>🖊️ Publish</button>
+  <hr>
+  <button>⚙️ Settings</button>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h3>🎬 Movie Review by @FilmFanatic</h3>
+        <p><strong>Movie:</strong> Oppenheimer (2023)</p>
+        <p><strong>Review:</strong> An intense, thought-provoking masterpiece with stunning visuals and a gripping performance by Cillian Murphy. Christopher Nolan delivers another gem. Must watch!</p>
+      </div>
+
+      <div class="post">
+        <h3>🎵 Song Drop by @MelodyMaker</h3>
+        <p><strong>Song:</strong> "Lost in the Echo" - Linkin Park</p>
+        <p><strong>Description:</strong> This song fuels my creative energy. A perfect blend of powerful vocals and heavy beats. Check it out if you love alt-rock!</p>
+        <audio controls>
+          <source src="song.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="post music-post">
+        <h3>🎧 Now Playing by @KpopVibes</h3>
+        <p><strong>Track:</strong> GIANT - Stray Kids</p>
+        <p><strong>Feeling:</strong> Pure adrenaline rush. Stray Kids never miss! 🔥</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAH0CAYAAABU2Hu2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdeZhdV53/8fcvE8ukbK06u3... (trimmed for length)" alt="Music Screenshot">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
