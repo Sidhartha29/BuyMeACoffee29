@@ -7,10 +7,6 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "database/server.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -23,9 +19,6 @@
       "dest": "/dist/$1"
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
-  },
   "functions": {
     "database/server.js": {
       "runtime": "nodejs18.x",
