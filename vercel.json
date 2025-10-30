@@ -2,8 +2,7 @@
   "version": 2,
   "functions": {
     "database/server.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 10
+      "runtime": "@vercel/node"
     }
   },
   "rewrites": [
